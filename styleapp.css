@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(130,0,255);
+    background: linear-gradient(180deg, rgba(130,0,255,1) 0%, rgba(0,0,0,1) 100%);
+    
+}
+
+.logo-fixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px white;
+    margin-bottom: 50px;
+}
+
+.logo-fixa a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 70px;
+    width: 300px;
+    margin: 20px;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.logo-fixa > .logo{
+    background-image: url(img/Fandomgram-NOCROWN.png);
+    background-size: 320px;
+}
+
+.area-post{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: inset 2px 2px 5px slateblue;
+    box-shadow: 2px 2px 5px black;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.post{
+
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 3px;
+    padding: 20px;
+    box-shadow: inset 1px 1px 3px blueviolet;
+    outline-color: #5E17EB;
+    outline-style: groove;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.post:nth-child(4){
+    margin-bottom: 20px;
+}
+
+
+.info-user{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-items: center;
+    width: 360px;
+    border: 1px solid slateblue;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.info-user img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 4px;
+    box-shadow: 1px 1px 4px rgba(150, 150, 150, 0.459);
+}
+
+.info-user span{
+    text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.459);
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow:hidden;
+    width: 320px;
+}
+
+.descricao{
+    margin:auto;
+    max-width: 360px;
+    padding: 5px;
+    word-break: break-all;
+}
+
+.descricao p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.conteudo img{
+    display: flex;
+    max-width:360px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo legend{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 360px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #797878;
+    
+}
+
+.interagir{
+    margin: auto;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 360px;
+    height: 20px;
+}
+
+.interagir a{
+
+    width: 50px;
+    height: 50px;
+    background-position:center;
+    background-repeat: no-repeat;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.interagir > .curtir{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/6496/6496953.png);
+    background-size: 25px;
+}
+
+.interagir > .comentar{
+    background-image: url(https://cdn-icons.flaticon.com/png/512/3608/premium/3608177.png?token=exp=1641450581~hmac=d2ffe36ce53d31fc82b04854c712cae6);
+    background-size: 25px;
+}
+
+.interagir > .compartilhar{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/929/929468.png);
+    background-size: 22px;
+}
+
+.comentario{
+    margin: auto;
+    width: 360px;
+    height: 49px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+.comentario img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-right: 3px;
+}
+
+.comentario > .username{
+    font-weight: thin;
+    color: slateblue;
+    margin-right: 5px;
+}
+
+.comentario > .comment{
+    width: 210px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+
+/* Media queries*/
+
+@media only screen and (max-width: 520px){
+    body{
+        overflow-x: hidden;
+    }
+
+   .logo-fixa{
+       margin: auto;
+       margin-top: 5px;
+       width: 90%;
+       height: 50px;
+       padding: 10px;
+   } 
+   .logo-fixa > .logo{
+       background-size: 100%;
+   }
+
+    .area-post{
+        background: none;
+        box-shadow: none;
+        border:none;
+        padding: 0;
+        width: 90%;
+    }
+    .post{
+        width: 100%;
+    }
+
+    .info-user{
+        border:none;
+    }
+
+    .info-user > img{
+    
+        width: 30px;
+        height: 30px;
+        
+    }
+    .info-user > .username{
+        font-size: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .descricao p{
+        font-size: 5vw;
+    }
+
+    .conteudo > img{
+        width: 100%;
+    }
+    .conteudo > legend{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .interagir > a{
+        width: 18px;
+        height: 18px;
+        padding: 10px;
+    }
+
+    .interagir > .curtir{
+        background-size: 4vw;
+    }
+
+    .interagir > .comentar{
+        background-size: 4vw;
+    }
+
+    .interagir > .compartilhar{
+        background-size: 4vw;
+    }
+
+    .comentario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%
+    }
+
+    .comentario img{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .comentario > .username{
+        font-size: 4vw;
+    }
+    .comentario > .comment{
+        font-size: 4vw;
+    }
+}
